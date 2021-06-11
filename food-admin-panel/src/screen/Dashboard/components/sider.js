@@ -6,6 +6,7 @@ import { FiHome, FiShoppingCart } from "react-icons/fi";
 import { IoFastFoodOutline } from "react-icons/io5";
 import { BiFoodMenu, BiLogOutCircle } from "react-icons/bi";
 import { VscSettings } from "react-icons/vsc";
+import globalConstants from "../../../constants";
 
 const { Sider } = Layout;
 
@@ -21,7 +22,7 @@ const SiderMenus = (props) => {
         }}
       >
         <div className="text-xl text-center font-bold m-5">
-          Cheese &amp; Spices
+          {globalConstants.appName}
         </div>
         <Menu
           theme="light"
@@ -38,7 +39,7 @@ const SiderMenus = (props) => {
               </IconContext.Provider>
             }
           >
-            <span className="pl-3">Home</span>
+            <span className="pl-3">{globalConstants.menus.homeMenu}</span>
           </Menu.Item>
           <Menu.Item
             key="2"
@@ -48,7 +49,7 @@ const SiderMenus = (props) => {
               </IconContext.Provider>
             }
           >
-            <span className="pl-3">Orders</span>
+            <span className="pl-3">{globalConstants.menus.orderMenu}</span>
           </Menu.Item>
           <Menu.Item
             key="3"
@@ -58,7 +59,7 @@ const SiderMenus = (props) => {
               </IconContext.Provider>
             }
           >
-            <span className="pl-3">Menu</span>
+            <span className="pl-3">{globalConstants.menus.menuMenu}</span>
           </Menu.Item>
           <Menu.Item
             key="4"
@@ -68,7 +69,7 @@ const SiderMenus = (props) => {
               </IconContext.Provider>
             }
           >
-            <span className="pl-3">Invoice</span>
+            <span className="pl-3">{globalConstants.menus.invoiceMenu}</span>
           </Menu.Item>
           <Menu.Item
             key="5"
@@ -78,7 +79,7 @@ const SiderMenus = (props) => {
               </IconContext.Provider>
             }
           >
-            <span className="pl-3">Reviews</span>
+            <span className="pl-3">{globalConstants.menus.reviewMenu}</span>
           </Menu.Item>
           <Divider />
           <Menu.Item
@@ -89,7 +90,7 @@ const SiderMenus = (props) => {
               </IconContext.Provider>
             }
           >
-            <span className="pl-3">Settings</span>
+            <span className="pl-3">{globalConstants.menus.settingsMenu}</span>
           </Menu.Item>
           <Menu.Item
             key="7"
@@ -99,7 +100,7 @@ const SiderMenus = (props) => {
               </IconContext.Provider>
             }
           >
-            <span className="pl-3">Logout</span>
+            <span className="pl-3">{globalConstants.menus.logout}</span>
           </Menu.Item>
         </Menu>
       </Sider>
